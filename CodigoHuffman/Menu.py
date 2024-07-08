@@ -49,7 +49,7 @@ class Menu:
             end_time = time.time()
             print("--------------------------")
             print("Arquivo comprimido com sucesso!")
-            print(f"Tempo de execução: {end_time - start_time:.2f} segundos\n")
+            print(f"Tempo de execução: {end_time - start_time:.4f} segundos\n")
         else:
             print(f"Erro: '{arquivo_entrada}' não é um arquivo válido.\n")
 
@@ -62,7 +62,7 @@ class Menu:
             end_time = time.time()
             print("--------------------------")
             print("Arquivo descomprimido com sucesso!")
-            print(f"Tempo de execução: {end_time - start_time:.2f} segundos\n")
+            print(f"Tempo de execução: {end_time - start_time:.4f} segundos\n")
             print("Texto descomprimido:")
             print(texto_descomprimido)
         else:
