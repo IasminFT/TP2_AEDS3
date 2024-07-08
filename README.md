@@ -25,12 +25,12 @@ Este programa Python implementa a codificação e decodificação de textos util
        cd huffman-coding
 
 2. #### Adicionando Arquivo 
-    Adicione o arquivo de texto que você deseja compactar, ou o arquivo compactado que você deseja descompactar, na pasta       'TRABALHO PRATICO II AEDS 3'
+    Adicione o arquivo de texto que você deseja compactar, ou o arquivo compactado que você deseja descompactar, na pasta       'CodigoHuffman'
 
 3. #### Executando o Programa
    
-   Execute o arquivo Main.py para iniciar o programa:
-   `python Main.py`
+   Abra a pasta no terminal e execute o arquivo main.py para iniciar o programa:
+   `python3 main.py`
 
 4. #### Menu do Programa
 
