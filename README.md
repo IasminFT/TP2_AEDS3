@@ -29,7 +29,7 @@ Este programa Python implementa a codificação e decodificação de textos util
 
 3. #### Executando o Programa
    
-   Abra a pasta no terminal e execute o arquivo main.py para iniciar o programa:
+   Execute o arquivo main.py para iniciar o programa:
    `python3 main.py`
 
 4. #### Menu do Programa
