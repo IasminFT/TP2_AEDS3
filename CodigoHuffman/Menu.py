@@ -7,26 +7,18 @@ class Menu:
         self.huffman = Huffman()
 
     def apresentacao(self):
-        print("(-)---------------------------------------------------------------(-)")
-        print("          Curso de Sistemas de Informação - AEDS III")
-        print("                     TRABALHO PRÁTICO 2")
-        print("                      Código de Huffman")
-        print("(-)---------------------------------------------------------------(-)")
-        print("\nEste programa utiliza o código de Huffman para realizar a compressão e descompressão de textos.")
-        print("Docente: Luciana\n")
-        print("\nDiscentes:")
-        print("Davy Garcia")
-        print("Iasmin Torres")
-        print("Lavínia Charrua")
-        print("Lucas Cordeiro")
-        print("Pedro Augusto")
+        print("(-)------------------------------------------------------------------(-)")
+        print("               Curso de Sistemas de Informação - AEDS III")
+        print("                         TRABALHO PRÁTICO 2")
+        print("                          Código de Huffman")
+        print("")\
 
     def exibir_menu(self):
-        print("(-)----------------------------- Menu ----------------------------(-)")
+        print("(-)----------------------------- Menu -------------------------------(-)")
         print("1. Compactar")
         print("2. Descompactar")
         print("3. Sair e Limpar")
-        print("(-)---------------------------------------------------------------(-)")
+        print("(-)------------------------------------------------------------------(-)")
         print()
 
     def executar(self):
