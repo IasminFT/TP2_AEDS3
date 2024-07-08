@@ -36,29 +36,20 @@ Este programa Python implementa a codificação e decodificação de textos util
 
     Ao executar `Main.py` você verá o seguinte menu:
 
-        (-)---------------------------------------------------------(-)       
-                  Curso de Sistemas de Informação - AEDS III
-                             TRABALHO PRÁTICO 2
-                              Código de Huffman
-        (-)---------------------------------------------------------(-)
-        
-        Este programa utiliza o código de Huffman para realizar a compressão e descompressão de textos.
-        
-        Docente: Luciana
-    
-        Discentes:
-        Davy Garcia
-        Iasmin Torres
-        Lavínia Charrua
-        Lucas Cordeiro
-        Pedro Augusto
-    
-        (-)----------------------------- Menu ----------------------------(-)
-        1. Compactar
-        2. Descompactar
-        3. Sair e Limpar
-        (-)---------------------------------------------------------------(-)
-  
+       (-)------------------------------------------------------------------(-)
+                      Curso de Sistemas de Informação - AEDS III
+                                TRABALHO PRÁTICO 2
+                                 Código de Huffman
+
+       (-)----------------------------- Menu -------------------------------(-)
+       1. Compactar
+       2. Descompactar
+       3. Sair e Limpar
+       (-)------------------------------------------------------------------(-)
+       
+       Escolha uma opção (1/2/3):
+
+
   5. #### Opções do Menu
      - **Compactar** (`1`): Permite compactar um arquivo de texto digitando o nome do arquivo de entrada e o nome do arquivo de saída .huf.
      - **Descompactar** (`2`): Permite descompactar um arquivo .huf digitando o nome do arquivo de entrada e o nome do arquivo de saída.
