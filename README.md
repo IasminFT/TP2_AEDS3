@@ -21,7 +21,7 @@ Este programa Python implementa a codificação e decodificação de textos util
 
 ### Como usar:
 1. #### Clone este repositório
-       git clone https://github.com/seu-usuario/huffman-coding.git
+       git clone https://github.com/IasminFT/TP2_AEDS3
        cd huffman-coding
 
 2. #### Adicionando Arquivo 
