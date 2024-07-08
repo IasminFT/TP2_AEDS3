@@ -1,4 +1,5 @@
 import os
+import time
 from Huffman import Huffman
 
 class Menu:
@@ -24,7 +25,7 @@ class Menu:
         print("(-)----------------------------- Menu ----------------------------(-)")
         print("1. Compactar")
         print("2. Descompactar")
-        print("3. Sair")
+        print("3. Sair e Limpar")
         print("(-)---------------------------------------------------------------(-)")
         print()
 
@@ -40,7 +41,8 @@ class Menu:
             elif opcao == '2':
                 self.descompactar()
             elif opcao == '3':
-                print("Encerrando o programa. Até logo!")
+                self.limpar_arquivos()
+                print("Encerrando o programa e limpando arquivos. Até logo!")
                 break
             else:
                 print("Opção inválida. Tente novamente.\n")
@@ -50,32 +52,29 @@ class Menu:
         arquivo_saida = input("Digite o nome do arquivo de saída (.huf): ")
         if os.path.isfile(arquivo_entrada):
             texto = self.ler_arquivo(arquivo_entrada)
+            start_time = time.time()
             self.huffman.comprimir(texto, arquivo_saida)
+            end_time = time.time()
             print("--------------------------")
-            print("--------------------------")
-            print("Arquivo comprimido com sucesso!\n")
-            print()
+            print("Arquivo comprimido com sucesso!")
+            print(f"Tempo de execução: {end_time - start_time:.2f} segundos\n")
         else:
             print(f"Erro: '{arquivo_entrada}' não é um arquivo válido.\n")
-            print()
 
     def descompactar(self):
         arquivo_entrada = input("Digite o nome do arquivo de entrada (.huf): ")
         arquivo_saida = input("Digite o nome do arquivo de saída: ")
         if os.path.isfile(arquivo_entrada):
+            start_time = time.time()
             texto_descomprimido = self.huffman.descomprimir_arquivo(arquivo_entrada, arquivo_saida)
+            end_time = time.time()
             print("--------------------------")
-            print("--------------------------")
-            print("Arquivo descomprimido com sucesso!\n")
+            print("Arquivo descomprimido com sucesso!")
+            print(f"Tempo de execução: {end_time - start_time:.2f} segundos\n")
             print("Texto descomprimido:")
             print(texto_descomprimido)
-            print()
-            
         else:
             print(f"Erro: '{arquivo_entrada}' não é um arquivo válido.\n")
-            print("(-)---------------------------------------------------------------(-)")
-            print()
-            print()
 
     def ler_arquivo(self, nome_arquivo):
         try:
@@ -86,3 +85,9 @@ class Menu:
             print(f"Erro: '{nome_arquivo}' não é um arquivo válido.")
         except Exception as e:
             print(f"Ocorreu um erro ao tentar ler o arquivo '{nome_arquivo}': {e}")
+
+    def limpar_arquivos(self):
+        for file in os.listdir():
+            if file.endswith(".txt") or file.endswith(".huf"):
+                os.remove(file)
+                print(f"Arquivo '{file}' removido.")
